@@ -1,0 +1,49 @@
+///
+/// Created by PistonCube
+/// Url: www.pistoncube.com.ar | @PistonCube
+/// Git: github.com/PistonCube
+/// SourceCode: https://github.com/PistonCube/PistonCube-WebSite
+///
+
+	#signup-form {
+		@include vendor('display', 'flex');
+		position: relative;
+
+		input[type="text"],
+		input[type="password"],
+		input[type="email"] {
+			width: 18em;
+		}
+
+		> * {
+			margin: 0 0 0 1em;
+		}
+
+		> :first-child {
+			margin: 0 0 0 0;
+		}
+
+		@include breakpoint('<=xsmall') {
+			@include vendor('flex-direction', 'column');
+
+			input[type="type"],
+			input[type="password"],
+			input[type="email"] {
+				width: 100%;
+			}
+
+			> * {
+				margin: 1.25em 0 0 0;
+			}
+
+			.message {
+				bottom: -1.5em;
+				font-size: 0.9em;
+				height: 1em;
+				left: 0;
+				line-height: inherit;
+				margin-top: 0;
+				position: absolute;
+			}
+		}
+	}
