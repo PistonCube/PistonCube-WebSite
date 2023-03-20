@@ -22,8 +22,17 @@ body {
   background: #393e70;
 }
 
-
 #proyects
+{
+  background-color: #212431;
+}
+
+#links
+{
+  background-color: #212431;
+}
+
+#track
 {
   background-color: #212431;
 }
@@ -31,6 +40,14 @@ body {
 #languages
 {
   background-color: #212431;
+}
+
+.proyects img{
+  height:50px;
+  width:auto;
+  float: left;
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
 }
 
 .subscribe {
