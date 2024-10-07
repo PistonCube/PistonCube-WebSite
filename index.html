@@ -1,40 +1,169 @@
+<!-- 
+ Created by PistonCube
+ Url: www.pistoncube.com.ar
+ Git: github.com/PistonCube
+ SourceCode: https://github.com/PistonCube/PistonCube-WebSite
+-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>PistonCube | Home</title>
-<meta name="description" content="Hello! I'm Ezequiel, also currently known as PistonCube, a passionate 16 year old self taught developer living in Buenos Aires, Argentina.">
-<meta property="og:title" content="Home | PistonCube">
-<meta property="og:url" content="https://www.PistonCube.com.ar/">
-<meta name="theme-color" content="#000000">
-<meta property="og:image" content="./assets/img/favicon.png">
-<link rel="icon" href="./assets/img/favicon.png" />
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="PistonCube">
-<meta property="og:description" content="Hello! I'm Ezequiel, also currently known as PistonCube, a passionate 16 year old self taught developer living in Buenos Aires, Argentina.">
-<meta name="keywords" content="PistonCube, anarchyserver, server, server_anarchy, 2b2t, utilitymod, anarchy, anarchydev, konas, abyss, client, sape, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, Numby-hack, AlphoneLite, AlphoneLite, minecraft, minecraft-mod, hacking-minecraft, minecraft-hack, minecraft-hacked-client, minecraft-hacking, minecraft-hacks, alphone, alphone-client, anarchy server, server, 2b2t, minecraft, dev, NodeJs, Java, Python, Nginx, AIO hosting, hosting, minecraft server hosting, minecraft hosting, dedicted, cheap, minecraft host, free host, freehosting, PistonCube, anarchyserver, anarchy server, server, 2b2t, minecraft, dev, NodeJs, Java, Python, Nginx, AIO hosting, hosting, minecraft server hosting, minecraft hosting, dedicted, cheap, minecraft host, free host, freehosting, PistonCube, anarchyserver, anarchy server, server, 2b2t, minecraft, dev" />
-<meta property="og:image" content="./assets/img/favicon.png" />
-<meta name="twitter:image" content="./assets/img/favicon.png" />
-<meta content="./assets/img/favicon.png" property="og:image" />
-<meta name="description" content="Hello! I'm Ezequiel, also currently known as PistonCube, a passionate 16 year old self taught developer living in Buenos Aires, Argentina." />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-<link href="./assets/img/favicon.png" rel="icon">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-<link href="./assets/css/style.css" rel="stylesheet">
-<link href="./assets/css/main.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PistonCube | Home</title>
+  
+  <!-- Meta Tags -->
+  <meta name="description" content="I am Ezequiel, also known as PistonCube, a self-taught developer passionate about open-source and managing Minecraft servers, as well as a mentor at HolyHosting and the owner of 2b2t Argentina and MineArgento.">
+  <meta property="og:title" content="Home | PistonCube">
+  <meta property="og:url" content="https://www.PistonCube.com.ar/">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:image" content="/assets/img/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PistonCube">
+  <meta property="og:description" content="I am Ezequiel, also known as PistonCube, a self-taught developer passionate about open-source and managing Minecraft servers, as well as a mentor at HolyHosting and the owner of 2b2t Argentina and MineArgento.">
+  <meta name="keywords" content="PistonCube, anarchyserver, server, minecraft, dev, NodeJs, Java, Python, Nginx, hosting, minecraft server hosting, free hosting">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+  
+  <style>
+    .language-buttons {
+      margin-top: 20px; /* Add some space above the buttons */
+    }
+
+    .btn-lang {
+      background-color: #000000; /* Primary blue color */
+      color: white; /* Text color */
+      border: none; /* Remove border */
+      padding: 10px 20px; /* Padding around the text */
+      font-size: 16px; /* Increase font size */
+      border-radius: 25px; /* Rounded corners */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+      cursor: pointer; /* Change cursor to pointer */
+      margin: 5px; /* Space between buttons */
+    }
+
+    .btn-lang:hover {
+      background-color: #3b3b3b; /* Darker blue on hover */
+      transform: translateY(-2px); /* Slight lift on hover */
+    }
+
+    .btn-lang:active {
+      transform: translateY(0); /* Reset lift when clicked */
+    }
+  </style>
 </head>
-<body>
-<div id="overlay" class="overlay">
-<div class="overlay-body">
-<h2 class="overlay-description">Select your language</2>
-<div class="overlay-buttons-wrapper">
-<a href="https://www.pistoncube.com.ar/en/" class="btn btn-outline-secondary">English</a> | 
-<a href="https://www.pistoncube.com.ar/es/" class="btn btn-outline-secondary">Español</a>
-</div>
-</div>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="/assets/img/logo.png" alt="Logo">
+        <h1 class="sitename">⛧ PistonCube ⛧</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="/assets/img/hero-img.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>𝕻𝖎𝖘𝖙𝖔𝖓𝕮𝖚𝖇𝖊</h2>
+        <p>choose your language</p>
+
+        <!-- Language Buttons -->
+        <div class="language-buttons">
+          <button onclick="window.location.href='/en'" class="btn btn-lang">ENGLISH</button>
+          <button onclick="window.location.href='/es'" class="btn btn-lang">ESPAÑOL</button>
+        </div>
+
+      </div>
     </section>
-</div>
-</div>
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© 2019 - <span id="year"></span>  <strong class="px-1 sitename">PistonProyects</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="https://2b2t.net.ar/assets/js/data.js"></script>
+  <script>
+    window.onload = function() {
+        // Detect browser language
+        const userLang = navigator.language || navigator.userLanguage; 
+
+        // Redirigir según el idioma
+        if (userLang.startsWith('en')) {
+            window.location.href = '/en';
+        } else if (userLang.startsWith('es')) {
+            window.location.href = '/es';
+        } else {
+        // You can handle other languages ​​or redirect to a default page
+        window.location.href = '/en'; // Redirect to Spanish by default
+        }
+    }
+</script>
 </body>
+
 </html>
