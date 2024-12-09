@@ -146,7 +146,22 @@
 
   <!-- Main JS File -->
   <script src="/assets/js/main.js"></script>
+  <script>
+    window.onload = function() {
+        // Detect browser language
+        const userLang = navigator.language || navigator.userLanguage; 
 
+        // Redirigir según el idioma
+        if (userLang.startsWith('en')) {
+            window.location.href = '/en/404';
+        } else if (userLang.startsWith('es')) {
+            window.location.href = '/es/404';
+        } else {
+        // You can handle other languages ​​or redirect to a default page
+        window.location.href = '/en/404'; // Redirect to Spanish by default
+        }
+    }
+</script>
 </body>
 
 </html>
