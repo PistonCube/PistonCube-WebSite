@@ -8,19 +8,15 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors - Updated with Dark Violet + Green theme */
 :root {
-  --background-color: #0a090fea;
-  /* Background color for the entire website, including individual sections */
-  --default-color: #a3a3a3;
-  /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #00FF00;
-  /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #caf84bb7;
-  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #0a090fb0;
-  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --background-color: #050508;  /* Very dark almost black with violet tint */
+  --default-color: #d1d1e0;    /* Soft gray with slight purple hue */
+  --heading-color: #c084fc;     /* Soft violet */
+  --accent-color: #8b5cf6;      /* Vibrant violet */
+  --accent-green: #4ade80;      /* Neon green for accents */
+  --surface-color: #0a0a0fb0;
   --contrast-color: #ffffff;
-  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -874,6 +870,7 @@ section,
 .portfolios .portfolio-item .icon {
   color: var(--contrast-color);
   background: var(--accent-color);
+  background: #000000; 
   margin: 0;
   width: 64px;
   height: 64px;
@@ -1273,9 +1270,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -1294,4 +1288,217 @@ section,
 
 ::-webkit-scrollbar-thumb:hover {
   background: #393e70
+}
+
+/*--------------------------------------------------------------
+# Neon Side Burst Animation
+--------------------------------------------------------------*/
+.neon-side-burst {
+  display: inline-block;
+  animation: neonBurst 1.5s ease-in-out infinite;
+}
+@keyframes neonBurst {
+  0%, 100% { text-shadow: none; }
+  20% { text-shadow: -15px 0 35px #8b5cf6, 15px 0 35px #8b5cf6; }
+  40% { text-shadow: -8px 0 20px #a855f7, 8px 0 20px #a855f7; }
+  60% { text-shadow: -12px 0 28px #8b5cf6, 12px 0 28px #8b5cf6; }
+  80% { text-shadow: -4px 0 10px #c084fc, 4px 0 10px #c084fc; }
+}
+
+/*--------------------------------------------------------------
+# Skills Tags
+--------------------------------------------------------------*/
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skill-tag {
+  background: transparent;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 4px; 
+  padding: 6px 16px;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  border-color: rgba(139, 92, 246, 0.7);
+  background: rgba(139, 92, 246, 0.05);
+}
+
+.skill-name {
+  color: #b0b0c0;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: normal;
+}
+
+/*--------------------------------------------------------------
+# Portafolio Item Buttons 
+--------------------------------------------------------------*/
+
+.portfolio-item .btn-project {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 16px;
+  background: transparent;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  border-radius: 4px;
+  color: #c084fc;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.portfolio-item .btn-project:hover {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: #8b5cf6;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.project-tech span {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  color: #b0b0c0;
+  letter-spacing: normal;
+}
+
+.portfolio-item {
+  position: relative;
+}
+.stretched-link {
+  z-index: 1;
+}
+.btn-project, .project-tech {
+  z-index: 2;
+  position: relative;
+}
+
+/*--------------------------------------------------------------
+# Contact Section 
+--------------------------------------------------------------*/
+
+.contact-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  row-gap: 0.8rem;
+}
+.contact-social a {
+  color: #cbcbe6;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: 0.2s;
+}
+.contact-social a i {
+  font-size: 1.2rem;
+  color: #c084fc;
+}
+.contact-social a:hover {
+  color: #ffffff;
+}
+.contact-social a:hover i {
+  color: #8b5cf6;
+}
+
+
+/*--------------------------------------------------------------
+# Infrastructure Section & Cards 
+--------------------------------------------------------------*/
+
+.infrastructure .infra-card {
+  background: rgba(10, 10, 15, 0.5);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  height: 100%;
+  backdrop-filter: blur(2px);
+}
+
+.infrastructure .infra-card:hover {
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.05);
+  transform: translateY(-4px);
+}
+
+.infrastructure .infra-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+  padding-bottom: 0.75rem;
+}
+
+.infrastructure .infra-header i {
+  font-size: 2rem;
+  color: #c084fc;
+}
+
+.infrastructure .infra-header h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #e0e0ff;
+}
+
+.infrastructure .infra-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.infrastructure .infra-content li {
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #c0c0d0;
+  border-bottom: 1px dashed rgba(139, 92, 246, 0.15);
+}
+
+.infrastructure .infra-content li:last-child {
+  border-bottom: none;
+}
+
+.infrastructure .infra-content strong {
+  color: #c084fc;
+  font-weight: 500;
+  min-width: 110px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .infrastructure .infra-header h3 {
+    font-size: 1.2rem;
+  }
+  .infrastructure .infra-content li {
+    font-size: 0.85rem;
+  }
+  .infrastructure .infra-content strong {
+    min-width: 100px;
+  }
 }

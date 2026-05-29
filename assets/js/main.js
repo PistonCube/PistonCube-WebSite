@@ -250,22 +250,17 @@
   // Insert the year into the element with id "year"
   document.getElementById('year').textContent = year;
 
-  /**
-   * Calculate the years passed since December 14, 2006
-   */
+ // Calculate the years passed since December 14, 2006
   const startDate = new Date(2006, 11, 14); // December is month 11 (0-indexed)
   const currentDate = new Date();
   let yearsPassed = currentDate.getFullYear() - startDate.getFullYear();
 
-  /**
-   * Adjust if the current date is before the start date in the current year
-   */
+
+ //  Adjust if the current date is before the start date in the current year
   if (currentDate < startDate.setFullYear(currentDate.getFullYear())) {
     yearsPassed--;
   }
 
-  /**
-   * Insert the years passed into the element with id "years-passed"
-   */
+ //  Insert the years passed into the element with id "years-passed"
   document.getElementById('years-passed').textContent = yearsPassed;
 
